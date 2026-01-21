@@ -1,0 +1,3 @@
+name = "Olive"
+
+print(name)
