@@ -20,7 +20,7 @@ school = "Ucas"
 
 subject = "math"
 
-print(name, number, big_number, age, eye_color, favorite_color, breakfast, eye, year, school, subject)
+print(name, number, big_number, age, eye_color, favorite_color, breakfast, eye_color, year, school, subject)
 
 
 
