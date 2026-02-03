@@ -1,5 +1,5 @@
 import random #library code someone else wrote, always import at the top
-start = 18
+start = 1
 
 while start >= 1:
     print(start)
@@ -13,7 +13,7 @@ while start >= 1:
         count += 1
     print("Goose!")
 
-    number = random.randint(1,25)
+    """number = random.randint(1,25)
 
     while True:
         guess = int(input("Guess a number between 1 and 25: "))
@@ -22,6 +22,6 @@ while start >= 1:
             break #exit the loop
         
         elif guess > 25 or guess < 1:
-            print("that isnt an option")
+            print("that isnt an option")"""
             
     
