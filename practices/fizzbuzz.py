@@ -3,7 +3,8 @@ start = 1
 while start <= 50:
     print(start)
     count += 1
-    if start % 3 
+    if start % 3 ==o
+        
 
 
     
