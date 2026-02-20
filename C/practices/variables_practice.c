@@ -12,5 +12,11 @@ int main(){
     char fav_subject[] = "Math";
     int number = 6;
     
+    printf("favorite number is: %d\n", number);
+    printf("It worked!\n");
+    printf("%d\n", age);
+    printf("Your eye color is: %c\n", eye_color);
+    printf("You have a %c favorite color\n", color);
+    return 0; // required last line
 
 }
