@@ -13,7 +13,7 @@ int main(){
     scanf("%s", &user);
 
     printf("What is your favorite number?\n");
-    scanf("%d", &number);
+    scanf("%c", &number);
 
     printf("%s's favorite number is: %d\n", user, number);
     printf("It worked!\n");

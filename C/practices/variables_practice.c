@@ -11,12 +11,17 @@ int main(){
     char eye_color[] = "Browm";
     char fav_subject[] = "Math";
     int number = 6;
+    const float gpa = 3.62;
     
     printf("favorite number is: %d\n", number);
-    printf("It worked!\n");
-    printf("%d\n", age);
-    printf("Your eye color is: %c\n", eye_color);
-    printf("You have a %c favorite color\n", color);
-    return 0; // required last line
+    printf("Your age is: %d\n", age);
+    printf("Your eye color is: %s\n", eye_color);
+    printf("You have a %s favorite color\n", color);
+    printf("Your name is: %s\n", name);
+    printf("Your GPA is: %f\n", gpa);
+    printf("Your favorite subject is: %s\n", fav_subject);
+    printf("The year is: %d\n", year);
+    printf("Your breakfast was: %s\n", breakfast);
+   return 0; // required last line
 
 }
