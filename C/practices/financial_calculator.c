@@ -5,27 +5,27 @@ int main(){
     int rent;
     int utilities;
     int groceries;
-    int transportation;
+    int transportation; 
 
-    printf("Your monthly income will be: \n");
-    scanf("%f", &income);
-    printf("Rent is: \n");
-    scanf("%f", &rent);
+    printf("Your monthly income will be: %d\n");
+    scanf("%d", &income);
+    printf("Rent is: %d\n");
+    scanf("%d", &rent);
    
-    printf("Rent is %f of your income\n", (float) income/rent);
-    printf("utilities is: \n");
-    scanf("%f", &utilities);
+    printf("Rent is %d of your income\n", (int) rent/income * 100);
+    printf("utilities is: %d\n");
+    scanf("%d, &utilities");
 
-    printf("Utilities is %f of your income\n", (float) income/rent);
+    printf("Utilities is %d of your income\n", (int) utilities/income * 100);
+ 
+    printf("Groceries is: %d\n");
+    scanf("%d", &groceries);
 
-    printf("Groceries is: \n");
-    scanf("%f", &groceries);
+    printf("Groceries is %d of your income\n", (int) groceries/income * 100);
 
-    printf("Groceries is %f of your income\n", (float) income/rent);
-
-    printf("Transportation is: \n");
-    scanf("%f", &transportation);
-    printf("Transportation is %f of your income\n", (float) income/transportation);
+    printf("Transportation is: %d\n");
+    scanf("%d", &transportation);
+    printf("Transportation is %d of your income\n", (int) transportation/income * 100);
     
    
 
