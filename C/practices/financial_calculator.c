@@ -13,6 +13,20 @@ int main(){
     scanf("%f", &rent);
    
     printf("Rent is %f of your income\n", (float) income/rent);
+    printf("utilities is: \n");
+    scanf("%f", &utilities);
+
+    printf("Utilities is %f of your income\n", (float) income/rent);
+
+    printf("Groceries is: \n");
+    scanf("%f", &groceries);
+
+    printf("Groceries is %f of your income\n", (float) income/rent);
+
+    printf("Transportation is: \n");
+    scanf("%f", &transportation);
+    printf("Transportation is %f of your income\n", (float) income/transportation);
+    
    
 
     return 0;
