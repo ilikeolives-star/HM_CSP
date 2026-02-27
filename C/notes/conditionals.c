@@ -10,8 +10,8 @@ int main(){
     if (grade >= 90){
         if (grade > 93)
         printf("Your grade is %d percent. That is an A!\n", grade);
-    }else{
-     printf("Your grade is %d percent. That is an A-\n", grade);
+    }else if 
+        printf("Your grade is %d percent. That is an A-\n", grade);
     }
     }else if (grade >= 80){
         printf("Your grade is %d percent. That is an B.\n", grade);
@@ -35,12 +35,13 @@ int main(){
             printf("%d is a large number\n", num);
 }
         
-        char name[] = "Trayson";
+        char name[] = "Trayson";{
 
         if(strcmp(name, "treyson") == 0){
             printf("Welcome Admin\n");
         }else{
             printf("welcome %s\n");
+        }
 
        
 
