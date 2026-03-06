@@ -1,19 +1,13 @@
-// HM p7 update financial calculator 
+// HM P7 update financial calculator 
 #include <stdio.h>
+
 float income, rent, utilities, groceries, transportation;
 float rent_percent, utilities_percent, groceries_percent, transportation_percent;
 float savings, savings_percent, spending_money;
-void get_user_input() {
+void get_user_input(){
+    
     printf("What is your monthly income: ");
     scanf("%f", &income);
-    printf("What is your monthly rent/mortgage: ");
-    scanf("%f", &rent);
-    printf("What is your monthly utilities: ");
-    scanf("%f", &utilities);
-    printf("What is your monthly groceries: ");
-    scanf("%f", &groceries);
-    printf("What is your monthly transportation: ");
-    scanf("%f", &transportation);
 }
 void calculate_percentages() {
     rent_percent = (rent / income) * 100;
@@ -24,15 +18,15 @@ void calculate_percentages() {
     savings = (savings_percent / 100) * income;
     spending_money = income - (rent + utilities + groceries + transportation + savings);
 }
-int main(void) {  
+int main(void){  
     get_user_input();
     calculate_percentages();
-    printf("Your rent is $%.2f and that is %.0f%% of your income.\n", rent, rent_percent);
-    printf("Your utilities are $%.2f and that is %.0f%% of your income.\n", utilities, utilities_percent);
-    printf("Your groceries are $%.2f and that is %.0f%% of your income.\n", groceries, groceries_percent);
-    printf("Your transportation is $%.2f and that is %.0f%% of your income.\n", transportation, transportation_percent);
-    printf("You should save $%.2f a month, that is %.0f%% of your income.\n", savings, savings_percent);
-    printf("You have $%.2f of spending money each month!\n", spending_money);
+    printf("Your rent is $%.2f and that's %.0f%% of your income.\n", rent, rent_percent);
+    printf("Your utilities are $%.2f and that's %.0f%% of your income.\n", utilities, utilities_percent);
+    printf("Your groceries are $%.2f and that's %.0f%% of your income.\n", groceries, groceries_percent);
+    printf("Your transportation is $%.2f and that's %.0f%% of your income.\n", transportation, transportation_percent);
+    printf("You should definitely save $%.2f a month, that's %.0f%% of your income.\n", savings, savings_percent);
+    printf("You have $%.2f of money leftover to spend each month on what you want/need.\n", spending_money);
     return 0;
 }
 
