@@ -6,9 +6,18 @@ float rent_percent, utilities_percent, groceries_percent, transportation_percent
 float savings, savings_percent, spending_money;
 void get_user_input(){
     
-    printf("What is your monthly income: ");
+     printf("What is your monthly income: ");
     scanf("%f", &income);
+    printf("What is your monthly rent/mortgage: ");
+    scanf("%f", &rent);
+    printf("What is your monthly utilities: ");
+    scanf("%f", &utilities);
+    printf("What is your monthly groceries: ");
+    scanf("%f", &groceries);
+    printf("What is your monthly transportation: ");
+    scanf("%f", &transportation);
 }
+
 void calculate_percentages() {
     rent_percent = (rent / income) * 100;
     utilities_percent = (utilities / income) * 100;
