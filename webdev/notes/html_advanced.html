@@ -3,9 +3,42 @@
     <head>
         <title>Notes about advanced HTML</title>
         <meta charset="UTF-8"/>
+        <!--Embeded style sheets go inside the head tag-->
+        <style>
+            *{
+                background-color: rgba(153, 18, 231, 0.678);
+            }
+            img{
+                height: 50%;
+                border: 4px inset gold;
+            }
+            #unordered{
+                font-family: fantasy;
+            }
+            #ordered{
+                color: teal;
+                background-color:rgba(137, 43, 226, 0.863);
+            }
+            .odd{
+                background-color: azure;
+                color: rgba(220, 20, 60, 0.575);
+            }
+            p{
+                background-color: darksalmon;
+                color: #1d977f;
+                background-color: blue;
+                text-align: right;
+            }
+            h1{
+                text-align: center;
+                font-size: 4em;
+                border: 3px solid white;
+            }
+        </style>
     </head>
     <body>
         <h1>HTML Advanced Notes</h1>
+        <!--This is inline CSS... That is bad syntax!-->
         <div style="background-color: darkgray; height: 100px;
         width: 100px; border: 3px solid greenyellow;">
             <p>This is in the div</p>
@@ -13,24 +46,24 @@
         <div id="ordered">
         <p>This is how we make an ordered (numbered) list</p>
         <ol>
-            <li>Computer Science Principles</li>
+            <li class="odd">Computer Science Principles</li>
             <li>Computer Programming</li>
-            <li>Computer Prgramming 2</li>
+            <li class="odd">Computer Prgramming 2</li>
             <li>Advanced Computer Programming</li>
         </ol>
         </div>
-        <div id="unordered" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+        <div id="unordered" >
         <p>This is how you make an unordered list</p>
         <ul style="list-style-type: circle;">
-            <li>Apple</li>
+            <li class="odd">Apple</li>
             <li>Orange</li>
-            <li>Banana</li>
+            <li class="odd">Banana</li>
             <li>Peach</li>
 
         </ul>
         </div>
         <a href="https://www.w3schools.com/" target="_blank">W3Schools Unordered List Page</a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/M%C3%A2le_Black_Silver_Blotched_Tabby.jpeg" alt="Mainecoon Cat" height="200px"/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/M%C3%A2le_Black_Silver_Blotched_Tabby.jpeg" alt="Mainecoon Cat"/>
     
     </body>
 
