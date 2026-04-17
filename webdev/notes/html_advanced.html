@@ -4,12 +4,18 @@
         <title>Notes about advanced HTML</title>
         <meta charset="UTF-8"/>
         <!--Embeded style sheets go inside the head tag-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
         <style>
-            *{
+            body{
                 background-color: rgba(153, 18, 231, 0.678);
+                 font-family: "Syne Mono", monospace;
+                font-weight: 400;
+                font-style: normal;
             }
             img{
-                height: 50%;
+               width: 250px;
                 border: 4px inset gold;
             }
             #unordered{
@@ -34,17 +40,46 @@
                 font-size: 4em;
                 border: 3px solid white;
             }
+            .bold{
+                font-weight: bolder; color: red;
+            }
+            #italics{
+                font-style: italic;
+            }
+            .box{ background-color: darkgray; height: 100px;
+                width: 100px; border: 3px solid greenyellow;
+                font-variant: small-caps;
+                margin: 20px;
+                padding: 20px;
+
+             }
+             #box-wrapper{
+                display: block;
+                margin: auto;
+                width: 50%;
+             }
+             #lists-wrapper{
+                display: grid;
+                grid-template-columns: 50% 50%;
+             }
+             #imgs-wrapper{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+             }
         </style>
     </head>
     <body>
-        <h1>HTML Advanced Notes</h1>
+        <h1>HTML <span id="italics"> Advanced</span> Notes</h1>
         <!--This is inline CSS... That is bad syntax!-->
-        <div style="background-color: darkgray; height: 100px;
-        width: 100px; border: 3px solid greenyellow;">
+        <div id="box-wrapper"> 
+        <div class="box">
             <p>This is in the div</p>
         </div>
+        </div>
+        <div id="lists-wrapper">
         <div id="ordered">
-        <p>This is how we make an ordered (numbered) list</p>
+        <p>This is how we make an <span class="bold"> ordered (numbered) list</span> </p>
         <ol>
             <li class="odd">Computer Science Principles</li>
             <li>Computer Programming</li>
@@ -62,8 +97,11 @@
 
         </ul>
         </div>
+        </div>
         <a href="https://www.w3schools.com/" target="_blank">W3Schools Unordered List Page</a>
+        <div id="imgs-wrapper">
         <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/M%C3%A2le_Black_Silver_Blotched_Tabby.jpeg" alt="Mainecoon Cat"/>
+        </div>
     
     </body>
 
