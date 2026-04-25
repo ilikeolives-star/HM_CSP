@@ -7,6 +7,7 @@
     <style>
         body{ background-color: rgb(149, 110, 165); font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+
         }
         title{ text-align: center; color: rgb(193, 240, 145); 
         }
@@ -40,6 +41,20 @@
         }
         #chunk2{  display: flex; align-items: normal;
             
+        }
+        #extra{
+            display: none;
+            background-color: rgb(193, 240, 145);
+            padding: 10px;
+            border-radius: 6px;
+        }
+        button{
+             padding: 10px 15px;
+             border: none;
+             background-color: rgb(193, 240, 145);
+             color:rgb(149, 110, 165)
+             border-radius: 6px;
+             cursor: pointer;
         }
        
     </style>
@@ -79,5 +94,19 @@
 
         </ol>
         </div>
+     
+
+        <button onclick="toggleInfo()">Show /or hide extra info</button>
+        <div id="extra">
+            <p>Choir will definitely be beneficial if you want to enhance your social skills and singing talent!</p>
+               <img src="https://th.bing.com/th/id/OIP.Vr4DMScdzu4Hu4_qZN7d_wHaIs?w=169&h=198&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="Outlined person singing">
+        </div>
+
+        <script>
+            function toggleInfo() {
+                const info = document.getElementById("extra");
+                info.style.display = info.style.display === "none" ? "block" : "none";
+            }
+        </script>
     </body>
 </html>
