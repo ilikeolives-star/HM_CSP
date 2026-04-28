@@ -3,12 +3,29 @@
     <head>
         <title>Arches National Park</title>
         <meta charset="UTF-8" >
-    </head>
+ 
+    <script>
+        let count = 0
+        let imgs = ["https://lirp.cdn-website.com/8237dfbc/dms3rep/multi/opt/arches-driving-road-640w.jpg"]
+        let imgs_count = 0
+         function change(){
+            if (img_count >= imgs.length){
+
+            }else{
+                img_count += 1
+            }
+        }
+
+            function toggleInfo() {
+                const info = document.getElementById("extra");
+                info.style.display = info.style.display === "none" ? "block" : "none";
+            }
+        </script>
     <style>
         body{ background-color: burlywood; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(58, 58, 58);
 
         }
-        #pic{ display: flex; align-content: space-between;
+        #pic{ display: flex; align-content: space-between; 
 
         }
          button{
@@ -24,15 +41,29 @@
             padding: 10px;
             border-radius: 6px;
         }
+        #oh{
+            padding: 2px; margin: 1px;
+        }
+        #wow{
+            padding: 2px; margin: 1px;
+        }
+        #yes{
+            padding: 2px; margin: 1px;
+        }
+        #list{
+          font-size: large;
+        }
        
     </style>
+       </head>
     <body>
     <h1>Arches National Park</h1>
     <p>Arches National park in Utah is a fun place to have a little staycation(or even people outside of utah). This park holds the densest concentration of natural arches found anywhere on the planet. There is around 2,000 arches in the park, some of these are anonymous while others are more like welcome signs.</p>
     <div id="pic">
-    <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/grandcountyut/archesnp_8ea6df4a-faaf-4b34-8645-d3ff76a628ff.jpg" alt="Arch from Arches National Park">
-    <img src="https://cdn.5280.com/2024/05/Opener_Double-Arch_Whit-Richardson_20130204-DA-23-1280x720.jpg" alt="Circular arch in the night sky">
+    <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_limit,h_1200,q_75,w_1200/v1/clients/grandcountyut/archesnp_8ea6df4a-faaf-4b34-8645-d3ff76a628ff.jpg" alt="Arch from Arches National Park" id="wow">
+    <img src="https://cdn.5280.com/2024/05/Opener_Double-Arch_Whit-Richardson_20130204-DA-23-1280x720.jpg" alt="Circular arch in the night sky" id="oh" >
     </div>
+    <div id="list">
     <h1>Why should I go?</h1>
     <ol>
         <li>Arches</li>
@@ -40,19 +71,16 @@
         <li>History/culture</li>
         <li>Nature</li>
     </ol>
-    <img src="https://wildlandtrekking.com/content/webp-express/webp-images/doc-root/content/uploads/2024/01/Arches-sunset-1200x901.jpg.webp" alt="Beautiful Arch with colorful sky">
-     <button onclick="toggleInfo()">Show /or hide extra info</button>
+    </div>
+    <img  src="https://wildlandtrekking.com/content/webp-express/webp-images/doc-root/content/uploads/2024/01/Arches-sunset-1200x901.jpg.webp" alt="Beautiful Arch with colorful sky" id="yes" onmouseover="change()"/>
+     <button onclick="toggleInfo()">Additional information</button>
      <div id="extra">
         <h1>The Night Sky</h1>
         <p>Going to Arches National park will be a very life changing view. The light pollution there is basically nothing so youll be able to see the amazing night sky. So why don't you go on down and experience this view in Utah! </p>
         <img src="https://i0.wp.com/www.parkchasers.com/wp-content/uploads/2021/07/Night-Sky-in-Arches-National-Park.png?fit=1024%2C1024&ssl=1" alt="The galaxy seen at the park">
      </div>
-     <script>
-            function toggleInfo() {
-                const info = document.getElementById("extra");
-                info.style.display = info.style.display === "none" ? "block" : "none";
-            }
-        </script>
+     
+      
 
     </body>
 </html>
