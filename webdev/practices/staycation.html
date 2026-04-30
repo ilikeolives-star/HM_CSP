@@ -6,7 +6,7 @@
  
     <script>
         let count = 0
-        let imgs = ["https://lirp.cdn-website.com/8237dfbc/dms3rep/multi/opt/arches-driving-road-640w.jpg"]
+        let imgs = ["https://lirp.cdn-website.com/8237dfbc/dms3rep/multi/opt/arches-driving-road-640w.jpg","https://luminous-landscape.com/wp-content/uploads/2014/10/arch20029.jpg","https://i0.wp.com/americanfieldtrip.com/wp-content/uploads/2018/03/arches-55.jpg?fit=1000%2C667&ssl=1"]
         let imgs_count = 0
          function change(){
             if (img_count >= imgs.length){
@@ -32,7 +32,7 @@
              padding: 10px 15px;
              border: none;
              background-color: rgb(204, 204, 204);
-             color:rgb(121, 121, 121)
+             color:rgb(121, 121, 121);
              border-radius: 6px;
              cursor: pointer;
              
@@ -57,6 +57,11 @@
         #list{
           font-size: large;
         }
+        #secret{
+            padding: 2px; 
+            margin: 1px; 
+            width: 700px;
+        }
         
         
        
@@ -78,12 +83,12 @@
         <li>Nature</li>
     </ol>
     </div>
-    <img  src="https://wildlandtrekking.com/content/webp-express/webp-images/doc-root/content/uploads/2024/01/Arches-sunset-1200x901.jpg.webp" alt="Beautiful Arch with colorful sky" id="yes" onmouseover="change()"/>
+    <img  src="https://wildlandtrekking.com/content/webp-express/webp-images/doc-root/content/uploads/2024/01/Arches-sunset-1200x901.jpg.webp" alt="Beautiful Arch with colorful sky" id="yes" onmouseover="change()" onmouseout="change()"/>
      <button onclick="toggleInfo()">Additional Information</button>
      <div id="extra">
         <h1>The Night Sky</h1>
         <p>Going to Arches National park will be a very life changing view. The light pollution there is basically nothing so youll be able to see the amazing night sky. So why don't you go on down and experience this view in Utah! </p>
-        <img src="https://i0.wp.com/www.parkchasers.com/wp-content/uploads/2021/07/Night-Sky-in-Arches-National-Park.png?fit=1024%2C1024&ssl=1" alt="The galaxy seen at the park">
+        <img id="secret"src="https://i0.wp.com/www.parkchasers.com/wp-content/uploads/2021/07/Night-Sky-in-Arches-National-Park.png?fit=1024%2C1024&ssl=1" alt="The galaxy seen at the park">
      </div>
      
       
